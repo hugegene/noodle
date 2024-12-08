@@ -16,10 +16,10 @@ from sticky import st_fixed_container
 #         yield word + " "
 #         time.sleep(0.05)
 
-from streamlit_float import *
+# from streamlit_float import *
 
 # initialize float feature/capability
-float_init()
+# float_init()
 
 # col1, col2 = st.columns(2)
 
@@ -34,17 +34,17 @@ float_init()
 # container.float()
 
 
-with st.container():
-    st.button("This is inside the container")
+# with st.container():
+#     st.button("This is inside the container")
 
-    # You can call any Streamlit command, including custom components:
+#     # You can call any Streamlit command, including custom components:
     
-    float_parent()
+#     float_parent()
 
 
 
-# with st_fixed_container(mode="fixed", position="top", border=True):
-#     st.button("This is a fixed container.")
+with st_fixed_container(mode="fixed", position="top", border=True):
+    st.button("This is a fixed container.")
     # st.markdown(
     #     f"<div class='fixed-container-{key}'></div>",
     #     unsafe_allow_html=True,
